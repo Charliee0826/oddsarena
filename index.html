@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Odds Arena - Independent sports and gaming reviews, guides and comparisons.">
+<meta name="theme-color" content="#0b0812">
+<title>ODDS ARENA | Gaming Reviews & Guides</title>
+
+<style>
+:root {
+  --bg:#0b0812;
+  --panel:#171020;
+  --purple:#a855f7;
+  --light:#d8b4fe;
+  --white:#ffffff;
+  --muted:#aaa0b7;
+  --border:#30213e;
+}
+* {box-sizing:border-box;margin:0;padding:0}
+html {scroll-behavior:smooth}
+body {
+  background:var(--bg);
+  color:var(--white);
+  font-family:Arial,sans-serif;
+  line-height:1.6;
+}
+a {text-decoration:none;color:inherit}
+
+header {
+  padding:18px 7%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:20px;
+  border-bottom:1px solid var(--border);
+  background:#0d0914;
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+.logo {font-size:27px;font-weight:900;letter-spacing:-1px}
+.logo span {color:var(--purple)}
+nav {display:flex;gap:20px;flex-wrap:wrap}
+nav a {font-size:13px;color:#c5b8d1}
+nav a:hover {color:var(--light)}
+
+.hero {
+  text-align:center;
+  padding:110px 20px 85px;
+  background:radial-gradient(ellipse at center top,#472064 0%,#1a1027 45%,#0b0812 80%);
+}
+.eyebrow {
+  color:var(--light);
+  letter-spacing:4px;
+  font-size:11px;
+  font-weight:bold;
+}
+.hero h1 {
+  font-size:clamp(42px,8vw,82px);
+  line-height:1.08;
+  margin:25px 0;
+  font-weight:900;
+}
+.hero h1 span {color:var(--purple)}
+.hero p {
+  color:#c6b9d2;
+  max-width:620px;
+  margin:auto;
+}
+.button {
+  display:inline-block;
+  margin-top:30px;
+  padding:15px 30px;
+  background:linear-gradient(100deg,#7e22ce,#a855f7);
+  border-radius:9px;
+  font-weight:bold;
+  font-size:13px;
+}
+.stats {
+  display:flex;
+  justify-content:center;
+  gap:65px;
+  margin-top:65px;
+  flex-wrap:wrap;
+}
+.stats strong {display:block;font-size:17px}
+.stats small {color:var(--muted)}
+
+section {padding:75px 7%}
+.heading {margin-bottom:35px}
+.heading h2 {font-size:32px;margin:8px 0}
+.heading p {color:var(--muted)}
+
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+.card {
+  background:linear-gradient(145deg,#20142c,#120d19);
+  border:1px solid var(--border);
+  border-radius:15px;
+  padding:28px;
+  transition:.25s;
+}
+.card:hover {
+  transform:translateY(-5px);
+  border-color:var(--purple);
+}
+.card .icon {font-size:37px}
+.card h3 {margin:15px 0 8px}
+.card p {color:var(--muted);font-size:14px}
+.card a {color:var(--light);display:inline-block;margin-top:18px;font-size:14px}
+
+.about {
+  margin:20px 7% 70px;
+  padding:35px;
+  border:1px solid var(--border);
+  background:var(--panel);
+  border-radius:15px;
+}
+.about p {color:var(--muted);font-size:14px;margin-top:12px}
+
+footer {
+  padding:40px 7%;
+  text-align:center;
+  border-top:1px solid var(--border);
+  color:var(--muted);
+  font-size:13px;
+}
+.footer-links {
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:22px;
+  margin:20px 0;
+}
+footer a:hover {color:var(--light)}
+
+@media(max-width:650px) {
+  header {justify-content:center}
+  nav {justify-content:center;gap:12px}
+  .hero {padding:75px 18px}
+  .stats {gap:25px}
+  section {padding:55px 5%}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <a class="logo" href="#">ODDS<span>ARENA</span></a>
+  <nav>
+    <a href="#sports">Sports</a>
+    <a href="#casino">Casino</a>
+    <a href="#live">Live Casino</a>
+    <a href="#crash">Crash Games</a>
+    <a href="#about">About</a>
+  </nav>
+</header>
+
+<main>
+
+<div class="hero">
+  <div class="eyebrow">WELCOME TO ODDS ARENA</div>
+  <h1>ENTER THE<br><span>ARENA.</span></h1>
+  <p>
+    Discover independent reviews, gaming guides,
+    platform comparisons and industry insights.
+  </p>
+  <a class="button" href="#categories">EXPLORE NOW →</a>
+
+  <div class="stats">
+    <div><strong>SPORTS</strong><small>Sportsbook Guides</small></div>
+    <div><strong>CASINO</strong><small>Platform Reviews</small></div>
+    <div><strong>GLOBAL</strong><small>Gaming Insights</small></div>
+  </div>
+</div>
+
+<section id="categories">
+  <div class="heading">
+    <div class="eyebrow">DISCOVER</div>
+    <h2>Explore Categories</h2>
+    <p>Independent information and gaming platform reviews.</p>
+  </div>
+
+  <div class="grid">
+    <div class="card" id="sports">
+      <div class="icon">⚽</div>
+      <h3>Sports Betting</h3>
+      <p>Sportsbook information, football, cricket and sports guides.</p>
+      <a href="#about">Discover →</a>
+    </div>
+
+    <div class="card" id="casino">
+      <div class="icon">🎰</div>
+      <h3>Online Casino</h3>
+      <p>Casino platform reviews and independent comparisons.</p>
+      <a href="#about">Discover →</a>
+    </div>
+
+    <div class="card" id="live">
+      <div class="icon">🎲</div>
+      <h3>Live Casino</h3>
+      <p>Information about live dealer games and platforms.</p>
+      <a href="#about">Discover →</a>
+    </div>
+
+    <div class="card" id="crash">
+      <div class="icon">🚀</div>
+      <h3>Crash Games</h3>
+      <p>Crash game guides, mechanics and risk information.</p>
+      <a href="#about">Discover →</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="heading">
+    <div class="eyebrow">LATEST CONTENT</div>
+    <h2>Explore Our Guides</h2>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <div class="icon">🔍</div>
+      <h3>Platform Reviews</h3>
+      <p>Understand licensing, security and platform terms.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🛡️</div>
+      <h3>Responsible Gaming</h3>
+      <p>Learn about gaming risks and consumer protection.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🌍</div>
+      <h3>Global Markets</h3>
+      <p>Explore gaming regulations and market information.</p>
+    </div>
+  </div>
+</section>
+
+<div class="about" id="about">
+  <h2>About ODDS ARENA</h2>
+  <p>
+    Odds Arena is an independent informational website
+    covering sports betting and gaming platforms.
+  </p>
+  <p>
+    Some links may be affiliate links. We may receive
+    compensation from eligible partners. Affiliate
+    relationships do not guarantee positive reviews.
+  </p>
+  <p>
+    Gambling involves financial risk. Only adults legally
+    permitted to participate should access regulated services.
+    Always check local laws and play responsibly.
+  </p>
+</div>
+
+</main>
+
+<footer>
+  <a class="logo" href="#">ODDS<span>ARENA</span></a>
+  <div class="footer-links">
+    <a href="#about">About Us</a>
+    <a href="#about">Affiliate Disclosure</a>
+    <a href="#about">Privacy</a>
+    <a href="#about">Responsible Gaming</a>
+  </div>
+  <p>18+ where legally required.</p>
+  <p>© 2026 Odds Arena. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
